@@ -46,3 +46,4 @@ parameterized==0.9.0
 granian[reload]==2.5.0
 gunicorn
 searx
+uvicorn
