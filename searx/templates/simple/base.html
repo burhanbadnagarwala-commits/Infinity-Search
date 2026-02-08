@@ -30,7 +30,7 @@
   <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.png') }}">
 </head>
 <body class="{{ endpoint }}_endpoint">
-  <main id="main_{{  self._TemplateReference__context.name|replace("simple/", "")|replace(".html", "") }}" class="{{body_class}}">
+  <main id="main_{{  self._TemplateReference__context.name|replace('simple/', '')|replace('.html', '') }}" class="{{body_class}}">
     {% if errors %}
         <div class="dialog-error" role="alert">
             <a href="#" class="close" aria-label="close" title="close">×</a>
@@ -68,7 +68,6 @@
         Created by <strong>Burhanuddin M. Huzaifa Badnagar</strong> — <em>Founder of Infinity Search</em><br>
         | <a href="{{ get_setting('brand.issue_url') }}">Issue tracker</a>
         {% if enable_metrics %}| <a href="{{ url_for('stats') }}">Engine stats</a>{% endif %}
-        {% endif %}
         {% if get_setting('general.privacypolicy_url') %}
         | <a href="{{ get_setting('general.privacypolicy_url') }}">Privacy policy</a>
         {% endif %}
