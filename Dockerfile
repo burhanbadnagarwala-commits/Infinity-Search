@@ -4,8 +4,8 @@ FROM python:3.11-slim
 RUN apt-get update && apt-get install -y build-essential libxslt-dev libxml2-dev libffi-dev libssl-dev git curl
 
 # Copy the code
-COPY . /searxng
-WORKDIR /searxng
+COPY . /Infinity-Search
+WORKDIR /Infinity-Search
 
 # Install Python dependencies
 RUN pip install -r requirements.txt
@@ -15,3 +15,4 @@ EXPOSE 8888
 
 # Run SearXNG
 CMD ["python", "searx/webapp.py"]
+
