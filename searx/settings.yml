@@ -2,7 +2,7 @@ general:
   # Debug mode, only for development. Is overwritten by ${SEARXNG_DEBUG}
   debug: false
   # displayed name
-  instance_name: "Infinity Search"
+  instance_name: "Infinity-Search-India"
   # For example: https://example.com/privacy
   privacypolicy_url: false
   # use true to use your own donation page written in searx/info/en/donate.md
@@ -89,7 +89,7 @@ server:
   limiter: false
   # enable features designed only for public instances.
   # Is overwritten by ${SEARXNG_PUBLIC_INSTANCE}
-  public_instance: true
+  public_instance: false
 
   # If your instance owns a /etc/searxng/settings.yml file, then set the following
   # values there.
